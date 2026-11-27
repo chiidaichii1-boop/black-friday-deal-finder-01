@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deal Scout — Black Friday Deal Finder 2026</title>
+<meta name="description" content="Real Black Friday and Cyber Monday deals, found and checked on 27 November 2026, each with its store link, sale price, usual price and check time.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">Black Friday · 27 Nov — Cyber Monday · 30 Nov 2026</p>
+  <h1>Deal Scout</h1>
+  <p class="tagline">Real Black Friday deals, checked today — not list prices in a costume.</p>
+  <p class="checked-line" id="checked-line"></p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<main>
+  <section class="controls" aria-label="Find a deal">
+    <label class="search-label">Search
+      <input id="search" type="search" placeholder="Try “AirPods”, “TV”, “Dyson”…">
+    </label>
+    <label>Category
+      <select id="category"><option value="All">All categories</option></select>
+    </label>
+    <label>Store
+      <select id="store"><option value="All">All stores</option></select>
+    </label>
+    <label>At least
+      <select id="min-discount">
+        <option value="0">Any discount</option>
+        <option value="20">20% off</option>
+        <option value="40">40% off</option>
+        <option value="50">50% off</option>
+      </select>
+    </label>
+    <label>Sort by
+      <select id="sort">
+        <option value="best">Best deal first</option>
+        <option value="discount">Biggest discount</option>
+        <option value="price-low">Lowest price</option>
+        <option value="price-high">Highest price</option>
+      </select>
+    </label>
+  </section>
+
+  <p class="result-count" id="result-count" role="status"></p>
+  <div class="grid" id="deals"></div>
+  <p class="empty" id="no-results" hidden>No deals match that search. Loosen a filter or try another word.</p>
+
+  <section class="how">
+    <h2>How a deal earns its badge</h2>
+    <ul>
+      <li><span class="verdict verdict-new">New low</span> — cut of 50% or more, or the lowest price reported anywhere.</li>
+      <li><span class="verdict verdict-strong">Strong price</span> — 40% or more off the usual price.</li>
+      <li><span class="verdict verdict-good">Good price</span> — 20% or more off, worth buying if you need it.</li>
+      <li><span class="verdict verdict-routine">Routine sale</span> — a small cut; the honest label for a thin discount.</li>
+    </ul>
+    <p>Every price on this page was read on 27 November 2026 from the source named on its card. Prices move during Black Friday — check the price at the store before you pay.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Deal Scout is an independent deal finder. It is not affiliated with Amazon, Walmart, Best Buy, Target or any brand shown here. Store links go to the store's own search for the product.</p>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
